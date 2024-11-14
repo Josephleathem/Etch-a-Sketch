@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;/* horizontally centers the grid*/
+}
+#gridContainer {
+  display: flex;
+  flex-wrap: wrap; /*Ensures squares wrap to from rows*/
+  width: 640px; /*Define total width; adjust based on desired square size*/
+  height: 640px; /*Define total height; make it square */
+  border: 1px solid #000; /*Optional*/
+}
+
+.grid-square {
+  width: 40px; /* Matches the container's size divided by 16 */
+  height: 40px; /* Keep width and height equal for square shape */
+  box-sizing: border-box; /* Ensures padding/border won’t affect size */
+  border: 1px solid #303030; /* Optional: add a light border around each square */
+}
