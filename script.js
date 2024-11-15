@@ -1,7 +1,10 @@
-const container = document.getElementById('gridContainer');
+// create a variable for grid container to append new elements too
+const container = document.getElementById('gridContainer')
 
-for (let i = 0; i < 256; i++) { // 16 * 16 = 256 squares
-    const square = document.createElement('div'); // Create a new div
-    square.classList.add('grid-square'); // Add 'grid-square' class
-    container.appendChild(square); // Append to container
+// create a for loop to iterate the number of squares needed to be created and appended
+for (let i = 0; i < 256; i++) { // row * columns = gris squares (Here 16*16 = 256)
+  // create a div element for grid square, save it to a variable, add class to ne div, append to container
+  const square = document.createElement('div'); // creates the div element
+  square.classList.add('gridSquare'); // add's gridSquare class
+  container.appendChild(square); // appends square to container. 
 }
