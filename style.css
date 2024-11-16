@@ -1,23 +1,37 @@
+/* General body styling */
 body {
   background-color: white;
   display: flex;
-  height: 100vh; /* Sets view height to 100% of the view port. Regardless of the content on the page*/
-  justify-content: center; /* Horizontally aligns the grid to the center of the page*/
-  align-items: center; /* Vertically aligns the grid to the center of the page*/
-  margin: 0; /* Removes default margin*/
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
+/* Styling for the grid container */
 #gridContainer {
   display: flex;
-  flex-wrap: wrap; /* Ensures squares wrap to form row to row */
-  width: 640px; /* Define total width */
-  height: 640px; /* Define total height; Should be the same as the container width*/
-  border: 1px solid black; /* Optional: add a black border around container */
+  flex-wrap: wrap;
+  width: 640px;
+  height: 640px;
+  border: 1px solid black;
 }
 
+/* Styling for individual grid squares */
 .gridSquare {
-  width: 40px; /* Container's size divided by desired number or rows/columns (Here a 16*16 grid: 640/16 = 40)*/
-  height: 40px; /* Should equal the same as the gridSquare width for square shape */
-  box-sizing: border-box; /* Ensures padding/border won’t affect size */
-  border: 1px solid #c4c4c4; /* Optional: add a light border around each square */
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4; /* Optional: Light border around each square */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Styling for the button */
+.changeGridButton {
+  background-color: rgb(235, 235, 235);
+  color: black;
+  border: 2px outset black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
